@@ -1,0 +1,11 @@
+<div class="content" (click)="addNew()">
+    <div class="reminder" *ngFor="let todo of todos">
+        <input type="checkbox" [checked]="todo.checked">
+        <input type="text" [value]="todo.content">
+    </div>
+    <div class="reminder" #newReminder *ngIf="addingOne">
+            <input type="checkbox">
+            <input type="text" value="">
+    </div>
+</div>
+

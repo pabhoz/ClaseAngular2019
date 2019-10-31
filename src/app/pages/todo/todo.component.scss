@@ -1,0 +1,27 @@
+.content{
+    display: flex;
+    width: 510px;
+    height: 100%;
+    flex-flow: column;
+    .reminder{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        align-items: center;
+        input[type=text] {
+            font-size: 160% !important;
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 5px 5px 5px 15px;
+            margin-top: 5px;
+            &:focus{
+                outline: none;
+            }
+        }
+        input[type=checkbox] {
+            transform: scale(2);
+        }
+    }
+}
